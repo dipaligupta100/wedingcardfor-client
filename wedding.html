@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikah Invitation | Kaynat & Mohd Shahid — 16 Dec 2026</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Amiri, Cinzel Decorative, Cormorant Garamond, Great Vibes, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sageDeep: '#1d3c31',
+            sageDark: '#142a22',
+            sageSoft: '#9ab5a8',
+            goldChampagne: '#d4af37',
+            goldLight: '#f5e29f',
+            goldAntique: '#b58d28',
+            blushSoft: '#f2c6c6',
+            ivoryCream: '#fcf9f2',
+          },
+          fontFamily: {
+            arabic: ['"Amiri"', 'serif'],
+            royal: ['"Cinzel Decorative"', 'serif'],
+            serifLuxury: ['"Cormorant Garamond"', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            sansClean: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --gold-grad: linear-gradient(135deg, #b58d28 0%, #f5e29f 32%, #d4af37 55%, #fff3c4 80%, #9e7619 100%);
+    }
+
+    body {
+      background-color: #142a22;
+      background-image:
+        radial-gradient(circle at 50% 0%, rgba(36, 72, 59, 0.94) 0%, rgba(16, 34, 27, 0.99) 100%),
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.65' stroke-opacity='0.14'%3E%3Cpath d='M40 0 L48 18 L66 18 L53 31 L58 49 L40 39 L22 49 L27 31 L14 18 L32 18 Z'/%3E%3Ccircle cx='40' cy='40' r='28'/%3E%3Cpath d='M0 40 L80 40 M40 0 L40 80' stroke-dasharray='2 4'/%3E%3C/g%3E%3C/svg%3E");
+      color: #fcf9f2;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Shimmering Gold Foil Text */
+    .gold-text {
+      background: var(--gold-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 220% auto;
+      animation: shimmerGold 4s linear infinite;
+    }
+
+    @keyframes shimmerGold {
+      0% { background-position: 0% center; }
+      100% { background-position: 220% center; }
+    }
+
+    /* Royal Mughal Glass Card with Subtle Inner Gold Filigree */
+    .royal-card {
+      background: linear-gradient(165deg, rgba(34, 67, 55, 0.86) 0%, rgba(18, 38, 30, 0.95) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.48),
+        inset 0 0 28px rgba(245, 226, 159, 0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    /* Ornate Mughal Arch Top */
+    .mughal-hero-frame {
+      border-radius: 150px 150px 26px 26px;
+    }
+    @media (min-width: 640px) {
+      .mughal-hero-frame {
+        border-radius: 220px 220px 30px 30px;
+      }
+    }
+
+    /* Couple Photo Arch Frame + Ken Burns Gentle Zoom */
+    .photo-arch {
+      border-radius: 140px 140px 22px 22px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55), 0 0 28px rgba(212, 175, 55, 0.3);
+    }
+    @keyframes kenBurnsSlow {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+    }
+    .ken-burns {
+      animation: kenBurnsSlow 14s ease-in-out infinite;
+    }
+
+    /* Swaying Fanoos Lanterns */
+    @keyframes swayLantern {
+      0%, 100% { transform: rotate(-4deg); }
+      50% { transform: rotate(4deg); }
+    }
+    .lantern-left { transform-origin: top center; animation: swayLantern 4.2s ease-in-out infinite; }
+    .lantern-right { transform-origin: top center; animation: swayLantern 5.1s ease-in-out infinite reverse; }
+
+    /* Wax Seal Pulse */
+    @keyframes sealPulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.65); }
+      50% { transform: scale(1.07); box-shadow: 0 0 28px 10px rgba(212, 175, 55, 0.25); }
+    }
+    .wax-seal {
+      background: radial-gradient(circle at 30% 30%, #f5e29f, #d4af37 55%, #8a6412 100%);
+      animation: sealPulse 2.5s infinite ease-in-out;
+    }
+
+    /* Royal Gate Curtains */
+    .curtain-left, .curtain-right {
+      transition: transform 1.3s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    .curtains-opened .curtain-left { transform: translateX(-102%); }
+    .curtains-opened .curtain-right { transform: translateX(102%); }
+    .curtains-opened .curtain-seal-box {
+      opacity: 0;
+      transform: scale(1.22);
+      pointer-events: none;
+    }
+
+    /* Scroll Reveal */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.65s ease-out, transform 0.65s ease-out;
+    }
+    .reveal-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Floating Sparkle Ring */
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spin-mandala {
+      animation: spinSlow 48s linear infinite;
+    }
+
+    /* Toast Notification */
+    #toast-box {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+<body class="selection:bg-goldChampagne selection:text-sageDark">
+
+  <!-- Ambient Golden Sparkles & Rose Petals Canvas -->
+  <canvas id="ambient-canvas" class="fixed inset-0 pointer-events-none z-20"></canvas>
+
+  <!-- Compact Toast Notification -->
+  <div id="toast-box" class="fixed bottom-4 left-1/2 -translate-x-1/2 translate-y-20 opacity-0 z-50 px-4 py-2 rounded-full bg-sageDark/95 border border-goldChampagne text-goldLight shadow-2xl flex items-center gap-2 text-xs font-medium whitespace-nowrap">
+    <i class="fa-solid fa-sparkles text-goldChampagne"></i>
+    <span id="toast-msg">Notification</span>
+  </div>
+
+  <!-- Top-Right Mute/Unmute Chime Button -->
+  <button id="audio-btn" onclick="toggleChime()" title="Toggle Gentle Chimes"
+    class="fixed top-3.5 right-3.5 z-40 w-9 h-9 rounded-full bg-sageDark/90 border border-goldChampagne/70 text-goldLight shadow-lg flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+    <i id="audio-icon" class="fa-solid fa-volume-xmark text-xs"></i>
+  </button>
+
+  <!-- ===================================================================== -->
+  <!-- 1. INTERACTIVE OPENING ROYAL MUGHAL GATE & WAX SEAL ("K & S")         -->
+  <!-- ===================================================================== -->
+  <div id="opening-overlay" class="fixed inset-0 z-50 flex items-center justify-center overflow-hidden">
+    <!-- Left Velvet Gate -->
+    <div class="curtain-left absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#0e1f19] via-[#183329] to-[#1d3c31] border-r-2 border-goldChampagne/70 flex flex-col justify-between p-4 shadow-2xl">
+      <div class="w-12 h-12 border-t-2 border-l-2 border-goldLight/60 rounded-tl-2xl"></div>
+      <div class="w-12 h-12 border-b-2 border-l-2 border-goldLight/60 rounded-bl-2xl"></div>
+    </div>
+
+    <!-- Right Velvet Gate -->
+    <div class="curtain-right absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-[#0e1f19] via-[#183329] to-[#1d3c31] border-l-2 border-goldChampagne/70 flex flex-col justify-between items-end p-4 shadow-2xl">
+      <div class="w-12 h-12 border-t-2 border-r-2 border-goldLight/60 rounded-tr-2xl"></div>
+      <div class="w-12 h-12 border-b-2 border-r-2 border-goldLight/60 rounded-br-2xl"></div>
+    </div>
+
+    <!-- Center Royal Seal Crest -->
+    <div class="curtain-seal-box relative z-10 text-center px-5 max-w-sm mx-auto transition-all duration-500">
+      <div class="p-6 rounded-[2rem] bg-sageDark/95 border-2 border-goldChampagne/80 shadow-[0_0_60px_rgba(0,0,0,0.9)] backdrop-blur-md relative overflow-hidden">
+        <p class="font-arabic text-2xl sm:text-3xl text-goldLight mb-1">
+          بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+        </p>
+        <p class="text-[10px] uppercase tracking-[0.24em] text-sageSoft mb-3">
+          Bismillah-ir-Rahman-ir-Rahim
+        </p>
+
+        <div class="h-[1px] w-24 mx-auto bg-gradient-to-r from-transparent via-goldChampagne to-transparent mb-3"></div>
+
+        <p class="font-serifLuxury italic text-sm text-blushSoft mb-0.5">Royal Nikah Invitation</p>
+        <h1 class="font-script text-5xl gold-text leading-tight">Kaynat &amp; Shahid</h1>
+        <p class="font-royal text-[11px] tracking-[0.24em] text-goldLight/90 mt-1 mb-5">
+          16 • 12 • 2026
+        </p>
+
+        <button onclick="openInvitation()" class="group inline-flex flex-col items-center focus:outline-none cursor-pointer">
+          <div class="wax-seal w-20 h-20 rounded-full border-2 border-goldLight flex flex-col items-center justify-center text-sageDark shadow-2xl group-hover:scale-105 transition-transform">
+            <span class="font-royal font-black text-lg tracking-tight">K &amp; S</span>
+            <span class="text-[8px] font-bold uppercase tracking-widest">Open</span>
+          </div>
+          <span class="mt-3 text-[10px] uppercase tracking-[0.22em] text-goldLight animate-pulse">
+            Tap Seal to Open
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MAIN COMPACT & LUXURIOUS INVITATION CONTAINER                         -->
+  <!-- ===================================================================== -->
+  <main class="relative z-10 max-w-xl mx-auto px-3.5 sm:px-5 pb-10">
+
+    <!-- Hanging Swaying Fanoos Lanterns -->
+    <div class="relative flex justify-between items-start pointer-events-none px-5 sm:px-10 -mb-7 z-20">
+      <div class="lantern-left flex flex-col items-center">
+        <div class="w-[1.5px] h-11 sm:h-14 bg-gradient-to-b from-goldAntique to-goldLight"></div>
+        <svg class="w-8 h-12 text-goldLight drop-shadow-[0_4px_12px_rgba(212,175,55,0.55)]" viewBox="0 0 64 96" fill="none">
+          <path d="M32 2 L38 14 L26 14 Z" fill="currentColor"/>
+          <ellipse cx="32" cy="18" rx="14" ry="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M18 18 L12 44 L22 74 L42 74 L52 44 L46 18 Z" fill="rgba(245,226,159,0.22)" stroke="currentColor" stroke-width="2"/>
+          <circle cx="32" cy="46" r="5" fill="#fff8d6"/>
+          <path d="M22 74 L32 92 L42 74 Z" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <div class="lantern-right flex flex-col items-center">
+        <div class="w-[1.5px] h-13 sm:h-16 bg-gradient-to-b from-goldAntique to-goldLight"></div>
+        <svg class="w-8 h-12 text-goldLight drop-shadow-[0_4px_12px_rgba(212,175,55,0.55)]" viewBox="0 0 64 96" fill="none">
+          <path d="M32 2 L38 14 L26 14 Z" fill="currentColor"/>
+          <ellipse cx="32" cy="18" rx="14" ry="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M18 18 L12 44 L22 74 L42 74 L52 44 L46 18 Z" fill="rgba(245,226,159,0.22)" stroke="currentColor" stroke-width="2"/>
+          <circle cx="32" cy="46" r="5" fill="#fff8d6"/>
+          <path d="M22 74 L32 92 L42 74 Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- 1. HERO CARD: BISMILLAH, COUPLE ARCH PORTRAIT & FAMILY DETAILS      -->
+    <!-- =================================================================== -->
+    <section class="reveal-item royal-card mughal-hero-frame relative overflow-hidden pt-10 pb-6 px-4 sm:px-7 text-center mb-3.5">
+      <!-- Rotating Mandala Watermark -->
+      <div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.07]">
+        <svg class="w-[460px] h-[460px] spin-mandala text-goldLight" viewBox="0 0 200 200" fill="none">
+          <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="1"/>
+          <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="0.8" stroke-dasharray="4 4"/>
+          <polygon points="100,10 125,75 190,100 125,125 100,190 75,125 10,100 75,75" stroke="currentColor" stroke-width="1"/>
+          <polygon points="36,36 100,65 164,36 135,100 164,164 100,135 36,164 65,100" stroke="currentColor" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <div class="relative z-10">
+        <!-- Bismillah -->
+        <p class="font-arabic text-2xl sm:text-3xl text-goldLight mb-0.5 drop-shadow">
+          بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+        </p>
+        <p class="text-[10px] uppercase tracking-[0.22em] text-sageSoft mb-3">
+          In the Name of Allah, the Most Gracious, the Most Merciful
+        </p>
+
+        <!-- MashaAllah Badge -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sageDark/80 border border-goldChampagne/40 text-goldLight text-xs mb-3">
+          <span class="font-arabic text-base">ما شاء الله</span>
+          <span class="text-[10px] uppercase tracking-widest text-blushSoft">• Nikah Ceremony •</span>
+        </div>
+
+        <!-- Mughal-Arch Couple Photo Frame -->
+        <div class="relative max-w-[260px] sm:max-w-[290px] mx-auto mb-3.5">
+          <div class="photo-arch overflow-hidden border-2 border-goldChampagne/85 bg-sageDark aspect-[3/4] relative">
+            <img
+              id="couple-img-preview"
+              src="bg.jpg"
+              onerror="if(!this.dataset.triedAlt){this.dataset.triedAlt='1';this.src='1000417254.jpg';}else{this.onerror=null;this.src='data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 500&quot;><defs><linearGradient id=&quot;bg&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;><stop offset=&quot;0%&quot; stop-color=&quot;#3b2a22&quot;/><stop offset=&quot;55%&quot; stop-color=&quot;#251914&quot;/><stop offset=&quot;100%&quot; stop-color=&quot;#142a22&quot;/></linearGradient><radialGradient id=&quot;glow&quot; cx=&quot;50%&quot; cy=&quot;35%&quot; r=&quot;60%&quot;><stop offset=&quot;0%&quot; stop-color=&quot;#ffdf9e&quot; stop-opacity=&quot;0.45&quot;/><stop offset=&quot;100%&quot; stop-color=&quot;#ffdf9e&quot; stop-opacity=&quot;0&quot;/></radialGradient><linearGradient id=&quot;lehenga&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;1&quot; y2=&quot;1&quot;><stop offset=&quot;0%&quot; stop-color=&quot;#4c1236&quot;/><stop offset=&quot;50%&quot; stop-color=&quot;#340923&quot;/><stop offset=&quot;100%&quot; stop-color=&quot;#220517&quot;/></linearGradient><linearGradient id=&quot;suit&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;1&quot; y2=&quot;1&quot;><stop offset=&quot;0%&quot; stop-color=&quot;#232328&quot;/><stop offset=&quot;100%&quot; stop-color=&quot;#0c0c0f&quot;/></linearGradient><linearGradient id=&quot;skin&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;><stop offset=&quot;0%&quot; stop-color=&quot;#f3cbb2&quot;/><stop offset=&quot;100%&quot; stop-color=&quot;#dfa788&quot;/></linearGradient></defs><rect width=&quot;400&quot; height=&quot;500&quot; fill=&quot;url(#bg)&quot;/><rect width=&quot;400&quot; height=&quot;500&quot; fill=&quot;url(#glow)&quot;/><g stroke=&quot;#ffd97d&quot; stroke-width=&quot;1&quot; opacity=&quot;0.35&quot;><line x1=&quot;35&quot; y1=&quot;0&quot; x2=&quot;35&quot; y2=&quot;420&quot;/><line x1=&quot;65&quot; y1=&quot;0&quot; x2=&quot;65&quot; y2=&quot;420&quot;/><line x1=&quot;335&quot; y1=&quot;0&quot; x2=&quot;335&quot; y2=&quot;420&quot;/><line x1=&quot;365&quot; y1=&quot;0&quot; x2=&quot;365&quot; y2=&quot;420&quot;/></g><g fill=&quot;#fff3c4&quot; opacity=&quot;0.85&quot;><circle cx=&quot;35&quot; cy=&quot;45&quot; r=&quot;2.5&quot;/><circle cx=&quot;35&quot; cy=&quot;110&quot; r=&quot;2.5&quot;/><circle cx=&quot;35&quot; cy=&quot;180&quot; r=&quot;2.5&quot;/><circle cx=&quot;35&quot; cy=&quot;250&quot; r=&quot;2.5&quot;/><circle cx=&quot;65&quot; cy=&quot;75&quot; r=&quot;2&quot;/><circle cx=&quot;65&quot; cy=&quot;145&quot; r=&quot;2&quot;/><circle cx=&quot;65&quot; cy=&quot;215&quot; r=&quot;2&quot;/><circle cx=&quot;335&quot; cy=&quot;75&quot; r=&quot;2&quot;/><circle cx=&quot;335&quot; cy=&quot;145&quot; r=&quot;2&quot;/><circle cx=&quot;335&quot; cy=&quot;215&quot; r=&quot;2&quot;/><circle cx=&quot;365&quot; cy=&quot;45&quot; r=&quot;2.5&quot;/><circle cx=&quot;365&quot; cy=&quot;110&quot; r=&quot;2.5&quot;/><circle cx=&quot;365&quot; cy=&quot;180&quot; r=&quot;2.5&quot;/><circle cx=&quot;365&quot; cy=&quot;250&quot; r=&quot;2.5&quot;/></g><g transform=&quot;translate(0,12)&quot;><path d=&quot;M125 132 C125 98, 178 98, 178 132 L176 168 C176 184, 127 184, 127 168 Z&quot; fill=&quot;#151518&quot;/><ellipse cx=&quot;152&quot; cy=&quot;148&quot; rx=&quot;23&quot; ry=&quot;29&quot; fill=&quot;url(#skin)&quot;/><path d=&quot;M129 142 C132 118, 172 118, 175 142 C170 128, 134 128, 129 142 Z&quot; fill=&quot;#151518&quot;/><path d=&quot;M139 144 Q144 141 149 144 M155 144 Q160 141 165 144&quot; stroke=&quot;#1f1b18&quot; stroke-width=&quot;2&quot; fill=&quot;none&quot;/><circle cx=&quot;144&quot; cy=&quot;148&quot; r=&quot;2&quot; fill=&quot;#1f1b18&quot;/><circle cx=&quot;160&quot; cy=&quot;148&quot; r=&quot;2&quot; fill=&quot;#1f1b18&quot;/><path d=&quot;M145 162 Q152 167 159 162&quot; stroke=&quot;#9c5a4c&quot; stroke-width=&quot;2&quot; fill=&quot;none&quot;/><path d=&quot;M150 171 L154 171&quot; stroke=&quot;#2b2522&quot; stroke-width=&quot;2.5&quot; stroke-linecap=&quot;round&quot;/><path d=&quot;M95 225 C98 195, 125 184, 152 184 C178 184, 204 195, 208 225 L216 490 L88 490 Z&quot; fill=&quot;url(#suit)&quot;/><path d=&quot;M136 184 L152 248 L168 184 Z&quot; fill=&quot;#141417&quot;/><path d=&quot;M132 184 L148 255 L138 255 L124 192 Z&quot; fill=&quot;#2c2c34&quot;/><path d=&quot;M172 184 L156 255 L166 255 L180 192 Z&quot; fill=&quot;#2c2c34&quot;/><circle cx=&quot;122&quot; cy=&quot;234&quot; r=&quot;3&quot; fill=&quot;#f5e29f&quot;/><path d=&quot;M122 236 Q128 252 135 246&quot; stroke=&quot;#f5e29f&quot; stroke-width=&quot;1.3&quot; fill=&quot;none&quot;/></g><g transform=&quot;translate(0,18)&quot;><path d=&quot;M206 168 C202 126, 272 126, 276 174 C282 225, 290 295, 282 355 L198 355 C196 290, 200 220, 206 168 Z&quot; fill=&quot;#121013&quot;/><ellipse cx=&quot;237&quot; cy=&quot;176&quot; rx=&quot;21&quot; ry=&quot;26&quot; fill=&quot;url(#skin)&quot;/><path d=&quot;M216 170 C222 146, 256 146, 258 172 C248 156, 226 158, 216 170 Z&quot; fill=&quot;#121013&quot;/><circle cx=&quot;214&quot; cy=&quot;186&quot; r=&quot;3.5&quot; fill=&quot;#f5e29f&quot;/><circle cx=&quot;260&quot; cy=&quot;186&quot; r=&quot;3.5&quot; fill=&quot;#f5e29f&quot;/><path d=&quot;M225 171 Q230 168 234 171 M241 171 Q246 168 250 171&quot; stroke=&quot;#1f1b18&quot; stroke-width=&quot;1.8&quot; fill=&quot;none&quot;/><circle cx=&quot;230&quot; cy=&quot;175&quot; r=&quot;2&quot; fill=&quot;#1f1b18&quot;/><circle cx=&quot;245&quot; cy=&quot;175&quot; r=&quot;2&quot; fill=&quot;#1f1b18&quot;/><path d=&quot;M232 189 Q237 193 243 189&quot; stroke=&quot;#b83b52&quot; stroke-width=&quot;2.2&quot; fill=&quot;none&quot;/><path d=&quot;M200 222 C208 205, 266 205, 274 222 L322 485 L162 485 Z&quot; fill=&quot;url(#lehenga)&quot;/><path d=&quot;M220 208 Q237 224 254 208&quot; stroke=&quot;#f5e29f&quot; stroke-width=&quot;2.2&quot; fill=&quot;none&quot;/><path d=&quot;M212 214 L255 485 M220 214 L265 485&quot; stroke=&quot;#f5e29f&quot; stroke-width=&quot;1.6&quot; stroke-dasharray=&quot;4 3&quot; opacity=&quot;0.85&quot;/><path d=&quot;M172 440 L312 440 M168 456 L316 456 M165 472 L319 472&quot; stroke=&quot;#f5e29f&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 4&quot; opacity=&quot;0.85&quot;/><g fill=&quot;#f5e29f&quot; opacity=&quot;0.75&quot;><circle cx=&quot;210&quot; cy=&quot;290&quot; r=&quot;2&quot;/><circle cx=&quot;235&quot; cy=&quot;320&quot; r=&quot;2&quot;/><circle cx=&quot;265&quot; cy=&quot;305&quot; r=&quot;2&quot;/><circle cx=&quot;200&quot; cy=&quot;365&quot; r=&quot;2.2&quot;/><circle cx=&quot;240&quot; cy=&quot;385&quot; r=&quot;2.2&quot;/><circle cx=&quot;280&quot; cy=&quot;370&quot; r=&quot;2.2&quot;/></g><ellipse cx=&quot;195&quot; cy=&quot;272&quot; rx=&quot;11&quot; ry=&quot;6&quot; fill=&quot;url(#skin)&quot;/><rect x=&quot;203&quot; y=&quot;266&quot; width=&quot;7&quot; height=&quot;12&quot; rx=&quot;2&quot; fill=&quot;#f5e29f&quot;/></g><text x=&quot;200&quot; y=&quot;472&quot; text-anchor=&quot;middle&quot; fill=&quot;#f5e29f&quot; font-family=&quot;Georgia, serif&quot; font-style=&quot;italic&quot; font-size=&quot;15&quot; letter-spacing=&quot;1.5&quot;>Kaynat &amp;amp; Mohd Shahid</text></svg>`);}"
+              alt="Kaynat & Mohd Shahid"
+              class="w-full h-full object-cover object-top ken-burns"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-sageDark/55 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+
+          <!-- Select Couple Photo from Gallery + Download WhatsApp Status Poster -->
+          <div class="mt-2.5 flex flex-wrap items-center justify-center gap-1.5">
+            <label for="couple-photo-input"
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sageDark/95 hover:bg-sageDeep border border-goldChampagne/70 text-[10px] uppercase tracking-wider text-goldLight cursor-pointer transition shadow">
+              <i class="fa-solid fa-image text-goldChampagne"></i>
+              <span id="photo-btn-label">Select Your Photo</span>
+            </label>
+            <button onclick="downloadStatusPoster()"
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-goldAntique via-goldChampagne to-goldLight text-sageDark font-bold text-[10px] uppercase tracking-wider cursor-pointer transition shadow hover:brightness-105">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Save Status Image
+            </button>
+          </div>
+          <input id="couple-photo-input" type="file" accept="image/*" class="hidden" onchange="previewCouplePhoto(event)" />
+        </div>
+
+        <!-- Host Line -->
+        <p class="font-serifLuxury text-lg sm:text-xl font-semibold text-ivoryCream">
+          Shakeela Khatoon
+        </p>
+        <p class="text-[11px] text-goldLight/90 italic mb-2">
+          W/o Late Mohd Yaqoob
+        </p>
+        <p class="text-xs text-sageSoft max-w-md mx-auto mb-3 leading-relaxed">
+          Cordially solicits your gracious presence &amp; blessings on the auspicious occasion of the Nikah of her beloved granddaughter
+        </p>
+
+        <!-- Bride & Groom Names -->
+        <div class="my-2">
+          <h1 class="font-script text-5xl sm:text-6xl gold-text leading-tight">Kaynat</h1>
+          <p class="text-xs sm:text-sm text-ivoryCream/90 font-serifLuxury">
+            D/o <span class="font-semibold text-goldLight">Mohd Gulzar &amp; Shama Parveen</span>
+          </p>
+
+          <div class="flex items-center justify-center gap-3 my-2">
+            <span class="h-[1px] w-12 bg-gradient-to-r from-transparent to-goldChampagne"></span>
+            <span class="font-script text-2xl text-blushSoft">Weds</span>
+            <span class="h-[1px] w-12 bg-gradient-to-l from-transparent to-goldChampagne"></span>
+          </div>
+
+          <h2 class="font-script text-5xl sm:text-6xl gold-text leading-tight">Mohd Shahid</h2>
+          <p class="text-xs sm:text-sm text-ivoryCream/90 font-serifLuxury">
+            S/o <span class="font-semibold text-goldLight">Mohd Nasir &amp; Ishrat</span>
+          </p>
+        </div>
+
+        <!-- Save The Date Pill -->
+        <div class="mt-4 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-sageDark/90 border border-goldChampagne/70 shadow-md">
+          <i class="fa-regular fa-calendar-check text-goldChampagne text-xs"></i>
+          <span class="font-royal text-xs sm:text-sm tracking-[0.18em] text-goldLight font-bold">
+            WEDNESDAY • 16 DECEMBER 2026
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 2. LIVE COUNTDOWN & SAVE THE DATE ACTIONS                           -->
+    <!-- =================================================================== -->
+    <section class="reveal-item royal-card rounded-2xl p-4 text-center mb-3.5">
+      <p class="text-[10px] uppercase tracking-[0.22em] text-goldLight mb-2.5">
+        Counting Down to the Blessed Nikah
+      </p>
+      <div class="grid grid-cols-4 gap-2 max-w-sm mx-auto mb-3">
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/45 py-2 px-1">
+          <div id="cd-days" class="font-royal text-lg sm:text-xl font-bold text-goldLight">00</div>
+          <div class="text-[9px] uppercase tracking-wider text-sageSoft">Days</div>
+        </div>
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/45 py-2 px-1">
+          <div id="cd-hours" class="font-royal text-lg sm:text-xl font-bold text-goldLight">00</div>
+          <div class="text-[9px] uppercase tracking-wider text-sageSoft">Hours</div>
+        </div>
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/45 py-2 px-1">
+          <div id="cd-mins" class="font-royal text-lg sm:text-xl font-bold text-goldLight">00</div>
+          <div class="text-[9px] uppercase tracking-wider text-sageSoft">Mins</div>
+        </div>
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/45 py-2 px-1">
+          <div id="cd-secs" class="font-royal text-lg sm:text-xl font-bold text-blushSoft">00</div>
+          <div class="text-[9px] uppercase tracking-wider text-sageSoft">Secs</div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <button onclick="downloadStatusPoster()"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-goldAntique via-goldChampagne to-goldLight text-sageDark font-semibold text-xs shadow hover:brightness-105 transition cursor-pointer">
+          <i class="fa-solid fa-mobile-screen-button"></i> Status Card (9:16)
+        </button>
+        <button onclick="downloadCalendarICS()"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-sageDark/90 border border-goldChampagne/60 text-goldLight font-medium text-xs hover:bg-sageDeep transition cursor-pointer">
+          <i class="fa-solid fa-calendar-plus text-goldChampagne"></i> Save Date
+        </button>
+        <button onclick="shareWhatsApp()"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-sageDark/90 border border-goldChampagne/60 text-goldLight font-medium text-xs hover:bg-sageDeep transition cursor-pointer">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> Invite on WhatsApp
+        </button>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 3. PROGRAMME SCHEDULE (BARAT, NIKAH, DINNER)                        -->
+    <!-- =================================================================== -->
+    <section class="reveal-item royal-card rounded-2xl p-4 text-center mb-3.5">
+      <span class="inline-block text-[10px] uppercase tracking-[0.22em] text-blushSoft font-semibold mb-0.5">
+        InshaAllah • Programme
+      </span>
+      <h3 class="font-royal text-sm sm:text-base text-goldLight tracking-wider mb-3">
+        Wedding Celebrations • 16-12-2026
+      </h3>
+
+      <div class="grid grid-cols-3 gap-2">
+        <div class="rounded-xl bg-sageDark/85 border border-goldChampagne/40 p-2.5">
+          <i class="fa-solid fa-horse text-goldChampagne text-sm mb-1"></i>
+          <p class="font-serifLuxury font-bold text-xs sm:text-sm text-ivoryCream">Arrival of Barat</p>
+          <p class="text-[11px] font-semibold text-goldLight mt-0.5">7:00 PM</p>
+        </div>
+        <div class="rounded-xl bg-sageDark/95 border border-goldChampagne/80 p-2.5 shadow-[0_0_18px_rgba(212,175,55,0.16)]">
+          <i class="fa-solid fa-mosque text-goldLight text-sm mb-1"></i>
+          <p class="font-serifLuxury font-bold text-xs sm:text-sm text-goldLight">Nikah Ceremony</p>
+          <p class="text-[11px] font-semibold text-blushSoft mt-0.5">8:00 PM</p>
+        </div>
+        <div class="rounded-xl bg-sageDark/85 border border-goldChampagne/40 p-2.5">
+          <i class="fa-solid fa-utensils text-goldChampagne text-sm mb-1"></i>
+          <p class="font-serifLuxury font-bold text-xs sm:text-sm text-ivoryCream">Dinner</p>
+          <p class="text-[11px] font-semibold text-goldLight mt-0.5">8:30 PM</p>
+        </div>
+      </div>
+
+      <!-- Sunnah Nikah Dua -->
+      <div class="mt-3 pt-2.5 border-t border-goldChampagne/25">
+        <p class="font-arabic text-base sm:text-lg text-goldLight">
+          بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+        </p>
+        <p class="text-[10px] italic text-sageSoft">
+          "May Allah bless you both, shower His blessings upon you, and unite you in goodness."
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 4. VENUE DETAILS (SATYA VATIKA, DELHI-94)                           -->
+    <!-- =================================================================== -->
+    <section class="reveal-item royal-card rounded-2xl p-4 text-center mb-3.5">
+      <span class="inline-block text-[10px] uppercase tracking-[0.22em] text-blushSoft font-semibold mb-0.5">
+        Venue
+      </span>
+      <h3 class="font-royal text-base sm:text-lg text-goldLight tracking-wider">
+        SATYA VATIKA
+      </h3>
+      <p class="text-xs text-ivoryCream/90 mt-1 mb-3">
+        <i class="fa-solid fa-location-dot text-goldChampagne mr-1"></i>
+        Sabhapur, Near Shiv Mandir Bus Stand, Delhi-94
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <a href="https://maps.google.com/?q=Satya+Vatika+Sabhapur+Near+Shiv+Mandir+Bus+Stand+Delhi+94" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-goldAntique via-goldChampagne to-goldLight text-sageDark font-semibold text-xs shadow hover:brightness-105 transition">
+          <i class="fa-solid fa-diamond-turn-right"></i> Open Google Maps
+        </a>
+        <button onclick="copyAddress()"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-sageDark/90 border border-goldChampagne/60 text-goldLight font-medium text-xs hover:bg-sageDeep transition cursor-pointer">
+          <i class="fa-regular fa-copy"></i> Copy Address
+        </button>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 5. R.S.V.P. CONTACTS (ALL RELATIVES & FRIENDS)                      -->
+    <!-- =================================================================== -->
+    <section class="reveal-item royal-card rounded-2xl p-4 text-center mb-3.5">
+      <span class="inline-block text-[10px] uppercase tracking-[0.22em] text-blushSoft font-semibold mb-0.5">
+        R.S.V.P.
+      </span>
+      <h3 class="font-serifLuxury text-base sm:text-lg font-semibold text-goldLight mb-2.5">
+        All Relatives &amp; Friends
+      </h3>
+
+      <div class="grid grid-cols-2 gap-2 max-w-md mx-auto">
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/40 p-2 flex items-center justify-between">
+          <span class="text-xs font-semibold text-ivoryCream">9711088622</span>
+          <div class="flex items-center gap-1.5">
+            <a href="tel:9711088622" title="Call" class="w-6 h-6 rounded-full bg-goldChampagne/20 text-goldLight flex items-center justify-center hover:bg-goldChampagne hover:text-sageDark transition text-[10px]">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://wa.me/919711088622" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition text-[11px]">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/40 p-2 flex items-center justify-between">
+          <span class="text-xs font-semibold text-ivoryCream">8860477427</span>
+          <div class="flex items-center gap-1.5">
+            <a href="tel:8860477427" title="Call" class="w-6 h-6 rounded-full bg-goldChampagne/20 text-goldLight flex items-center justify-center hover:bg-goldChampagne hover:text-sageDark transition text-[10px]">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://wa.me/918860477427" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition text-[11px]">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/40 p-2 flex items-center justify-between">
+          <span class="text-xs font-semibold text-ivoryCream">9210029203</span>
+          <div class="flex items-center gap-1.5">
+            <a href="tel:9210029203" title="Call" class="w-6 h-6 rounded-full bg-goldChampagne/20 text-goldLight flex items-center justify-center hover:bg-goldChampagne hover:text-sageDark transition text-[10px]">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://wa.me/919210029203" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition text-[11px]">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-sageDark/90 border border-goldChampagne/40 p-2 flex items-center justify-between">
+          <span class="text-xs font-semibold text-ivoryCream">8447067359</span>
+          <div class="flex items-center gap-1.5">
+            <a href="tel:8447067359" title="Call" class="w-6 h-6 rounded-full bg-goldChampagne/20 text-goldLight flex items-center justify-center hover:bg-goldChampagne hover:text-sageDark transition text-[10px]">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://wa.me/918447067359" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition text-[11px]">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 6. NATURAL HEARTFELT BLESSINGS & DUAS FOOTER                        -->
+    <!-- =================================================================== -->
+    <section class="reveal-item royal-card rounded-2xl p-4 text-center">
+      <p class="font-arabic text-xl text-goldLight mb-1">
+        جَزَاكُمُ اللَّهُ خَيْرًا
+      </p>
+      <h4 class="font-serifLuxury text-base font-semibold text-ivoryCream mb-1">
+        With Warm Regards &amp; Heartfelt Duas
+      </h4>
+      <p class="text-xs text-sageSoft max-w-md mx-auto leading-relaxed">
+        Your gracious presence and heartfelt Duas at the wedding celebration will be the greatest gift for <span class="text-goldLight font-medium">Kaynat &amp; Mohd Shahid</span> as they begin their blessed journey together.
+      </p>
+    </section>
+
+  </main>
+
+  <script>
+    // Toast Notification Helper
+    let toastTimer;
+    function showToast(message) {
+      const box = document.getElementById('toast-box');
+      const msg = document.getElementById('toast-msg');
+      if (!box || !msg) return;
+      msg.textContent = message;
+      box.classList.remove('translate-y-20', 'opacity-0');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        box.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Gentle Celebratory Chimes (Web Audio API)
+    let audioCtx = null;
+    let isChimeEnabled = false;
+
+    function playCelebrationChimes() {
+      try {
+        if (!audioCtx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          audioCtx = new AudioContextClass();
+        }
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const notes = [523.25, 659.25, 783.99, 1046.50, 1318.51];
+        notes.forEach((freq, idx) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime + idx * 0.16);
+          gain.gain.setValueAtTime(0.001, audioCtx.currentTime + idx * 0.16);
+          gain.gain.exponentialRampToValueAtTime(0.07, audioCtx.currentTime + idx * 0.16 + 0.05);
+          gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + idx * 0.16 + 1.4);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(audioCtx.currentTime + idx * 0.16);
+          osc.stop(audioCtx.currentTime + idx * 0.16 + 1.5);
+        });
+      } catch (e) {}
+    }
+
+    function toggleChime() {
+      isChimeEnabled = !isChimeEnabled;
+      const icon = document.getElementById('audio-icon');
+      if (isChimeEnabled) {
+        if (icon) icon.className = 'fa-solid fa-volume-high text-xs';
+        playCelebrationChimes();
+        showToast('Celebration chimes unmuted');
+      } else {
+        if (icon) icon.className = 'fa-solid fa-volume-xmark text-xs';
+        showToast('Chimes muted');
+      }
+    }
+
+    // Opening Velvet Curtain & Wax Seal Reveal
+    function openInvitation() {
+      const overlay = document.getElementById('opening-overlay');
+      if (!overlay) return;
+      overlay.classList.add('curtains-opened');
+      isChimeEnabled = true;
+      const icon = document.getElementById('audio-icon');
+      if (icon) icon.className = 'fa-solid fa-volume-high text-xs';
+      playCelebrationChimes();
+      burstParticles();
+      setTimeout(() => {
+        overlay.style.display = 'none';
+      }, 1350);
+    }
+
+    // Live Countdown Timer to 16 December 2026, 7:00 PM IST
+    const weddingDate = new Date('2026-12-16T19:00:00+05:30').getTime();
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = Math.max(0, weddingDate - now);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      const dEl = document.getElementById('cd-days');
+      const hEl = document.getElementById('cd-hours');
+      const mEl = document.getElementById('cd-mins');
+      const sEl = document.getElementById('cd-secs');
+      if (dEl) dEl.textContent = String(days).padStart(2, '0');
+      if (hEl) hEl.textContent = String(hours).padStart(2, '0');
+      if (mEl) mEl.textContent = String(mins).padStart(2, '0');
+      if (sEl) sEl.textContent = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Couple Photo Upload Preview & Persistence
+    function previewCouplePhoto(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const img = document.getElementById('couple-img-preview');
+        img.src = ev.target.result;
+        try { localStorage.setItem('ks_nikah_couple_photo', ev.target.result); } catch (err) {}
+        document.getElementById('photo-btn-label').textContent = 'Change Photo';
+        burstParticles();
+        showToast('MashaAllah! Couple photo set & ready for Status Card.');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Load previously selected photo if saved in browser
+    try {
+      const savedPhoto = localStorage.getItem('ks_nikah_couple_photo');
+      if (savedPhoto) {
+        const imgEl = document.getElementById('couple-img-preview');
+        if (imgEl) imgEl.src = savedPhoto;
+      }
+    } catch (e) {}
+
+    // Generate High-Resolution 9:16 WhatsApp Status & Invitation Poster with Couple Photo
+    function downloadStatusPoster() {
+      showToast('Creating 9:16 HD WhatsApp Status Card...');
+      const poster = document.createElement('canvas');
+      poster.width = 1080;
+      poster.height = 1920;
+      const pctx = poster.getContext('2d');
+
+      // Deep Royal Mughal Emerald Background
+      const bgGrad = pctx.createLinearGradient(0, 0, 0, 1920);
+      bgGrad.addColorStop(0, '#132820');
+      bgGrad.addColorStop(0.5, '#1d3c31');
+      bgGrad.addColorStop(1, '#10221b');
+      pctx.fillStyle = bgGrad;
+      pctx.fillRect(0, 0, 1080, 1920);
+
+      // Soft Golden Halo Behind Photo
+      const halo = pctx.createRadialGradient(540, 650, 60, 540, 650, 520);
+      halo.addColorStop(0, 'rgba(245, 226, 159, 0.25)');
+      halo.addColorStop(1, 'rgba(245, 226, 159, 0)');
+      pctx.fillStyle = halo;
+      pctx.fillRect(0, 0, 1080, 1920);
+
+      // Ornate Double Gold Border
+      pctx.strokeStyle = '#d4af37';
+      pctx.lineWidth = 5;
+      pctx.strokeRect(38, 38, 1004, 1844);
+      pctx.strokeStyle = 'rgba(245, 226, 159, 0.45)';
+      pctx.lineWidth = 2;
+      pctx.strokeRect(54, 54, 972, 1812);
+
+      // Top Bismillah & Subtitle
+      pctx.textAlign = 'center';
+      pctx.fillStyle = '#f5e29f';
+      pctx.font = 'bold 48px serif';
+      pctx.fillText('بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم', 540, 135);
+
+      pctx.fillStyle = '#f2c6c6';
+      pctx.font = '600 24px sans-serif';
+      pctx.fillText('NIKAH INVITATION  •  SAVE THE DATE', 540, 188);
+
+      // Draw Mughal Arch Photo Frame
+      const archX = 255, archY = 230, archW = 570, archH = 740, archR = 285;
+      pctx.save();
+      pctx.beginPath();
+      pctx.moveTo(archX, archY + archH);
+      pctx.lineTo(archX, archY + archR);
+      pctx.arc(archX + archR, archY + archR, archR, Math.PI, 0, false);
+      pctx.lineTo(archX + archW, archY + archH);
+      pctx.closePath();
+      pctx.clip();
+
+      const sourceImg = document.getElementById('couple-img-preview');
+      if (sourceImg && sourceImg.complete && sourceImg.naturalWidth > 0) {
+        const imgRatio = sourceImg.naturalWidth / sourceImg.naturalHeight;
+        const boxRatio = archW / archH;
+        let drawW = archW, drawH = archH, offsetX = archX, offsetY = archY;
+        if (imgRatio > boxRatio) {
+          drawW = archH * imgRatio;
+          offsetX = archX - (drawW - archW) / 2;
+        } else {
+          drawH = archW / imgRatio;
+          offsetY = archY;
+        }
+        pctx.drawImage(sourceImg, offsetX, offsetY, drawW, drawH);
+      } else {
+        pctx.fillStyle = '#142a22';
+        pctx.fillRect(archX, archY, archW, archH);
+      }
+      pctx.restore();
+
+      // Gold Outline Around Photo Arch
+      pctx.beginPath();
+      pctx.moveTo(archX, archY + archH);
+      pctx.lineTo(archX, archY + archR);
+      pctx.arc(archX + archR, archY + archR, archR, Math.PI, 0, false);
+      pctx.lineTo(archX + archW, archY + archH);
+      pctx.closePath();
+      pctx.strokeStyle = '#d4af37';
+      pctx.lineWidth = 7;
+      pctx.stroke();
+
+      // Host & Couple Names
+      pctx.fillStyle = '#fcf9f2';
+      pctx.font = 'bold 30px Georgia, serif';
+      pctx.fillText('Shakeela Khatoon (W/o Late Mohd Yaqoob)', 540, 1030);
+
+      pctx.fillStyle = '#9ab5a8';
+      pctx.font = '24px sans-serif';
+      pctx.fillText('Cordially invites you to the Nikah Ceremony of', 540, 1072);
+
+      pctx.fillStyle = '#f5e29f';
+      pctx.font = 'italic bold 82px Georgia, serif';
+      pctx.fillText('Kaynat', 540, 1168);
+
+      pctx.fillStyle = '#fcf9f2';
+      pctx.font = '25px Georgia, serif';
+      pctx.fillText('D/o Mohd Gulzar & Shama Parveen', 540, 1208);
+
+      pctx.fillStyle = '#f2c6c6';
+      pctx.font = 'italic 36px Georgia, serif';
+      pctx.fillText('— Weds —', 540, 1262);
+
+      pctx.fillStyle = '#f5e29f';
+      pctx.font = 'italic bold 82px Georgia, serif';
+      pctx.fillText('Mohd Shahid', 540, 1348);
+
+      pctx.fillStyle = '#fcf9f2';
+      pctx.font = '25px Georgia, serif';
+      pctx.fillText('S/o Mohd Nasir & Ishrat', 540, 1388);
+
+      // Date & Timings Box
+      pctx.fillStyle = 'rgba(16, 34, 27, 0.85)';
+      pctx.fillRect(110, 1430, 860, 175);
+      pctx.strokeStyle = '#d4af37';
+      pctx.lineWidth = 2.5;
+      pctx.strokeRect(110, 1430, 860, 175);
+
+      pctx.fillStyle = '#f5e29f';
+      pctx.font = 'bold 38px Georgia, serif';
+      pctx.fillText('WEDNESDAY • 16 DECEMBER 2026', 540, 1492);
+
+      pctx.fillStyle = '#fcf9f2';
+      pctx.font = '600 26px sans-serif';
+      pctx.fillText('Arrival of Barat: 7:00 PM   |   Nikah: 8:00 PM   |   Dinner: 8:30 PM', 540, 1555);
+
+      // Venue & RSVP
+      pctx.fillStyle = '#f5e29f';
+      pctx.font = 'bold 32px Georgia, serif';
+      pctx.fillText('Venue: SATYA VATIKA', 540, 1672);
+
+      pctx.fillStyle = '#fcf9f2';
+      pctx.font = '25px sans-serif';
+      pctx.fillText('Sabhapur, Near Shiv Mandir Bus Stand, Delhi-94', 540, 1714);
+
+      pctx.fillStyle = '#f2c6c6';
+      pctx.font = '600 24px sans-serif';
+      pctx.fillText('R.S.V.P. All Relatives & Friends: 9711088622, 8860477427', 540, 1775);
+
+      pctx.fillStyle = '#9ab5a8';
+      pctx.font = 'italic 22px Georgia, serif';
+      pctx.fillText('Your presence & Duas are warmly awaited', 540, 1825);
+
+      try {
+        const link = document.createElement('a');
+        link.download = 'Kaynat_Mohd_Shahid_Nikah_Status.png';
+        link.href = poster.toDataURL('image/png');
+        link.click();
+        burstParticles();
+        showToast('HD WhatsApp Status Card downloaded!');
+      } catch (err) {
+        showToast('Select your photo via "Select Your Photo" first to export!');
+      }
+    }
+
+    // Save the Date (.ics)
+    function downloadCalendarICS() {
+      const ics = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'BEGIN:VEVENT',
+        'DTSTART:20261216T133000Z',
+        'DTEND:20261216T173000Z',
+        'SUMMARY:Nikah Ceremony - Kaynat & Mohd Shahid',
+        'DESCRIPTION:Arrival of Barat: 7:00 PM | Nikah: 8:00 PM | Dinner: 8:30 PM',
+        'LOCATION:Satya Vatika, Sabhapur, Near Shiv Mandir Bus Stand, Delhi-94',
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+      const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'Kaynat_Shahid_Nikah_16Dec2026.ics';
+      a.click();
+      showToast('Saved to Calendar!');
+    }
+
+    // WhatsApp Share
+    function shareWhatsApp() {
+      const text = encodeURIComponent(
+        "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم\n" +
+        "*Assalamu Alaikum Wa Rahmatullahi Wa Barakatuh*\n\n" +
+        "Shakeela Khatoon (W/o Late Mohd Yaqoob) invites you to the *Nikah Ceremony* of\n" +
+        "✨ *Kaynat* (D/o Mohd Gulzar & Shama Parveen)\n" +
+        "Weds *Mohd Shahid* (S/o Mohd Nasir & Ishrat)\n\n" +
+        "📅 *16-12-2026* | Barat 7:00 PM • Nikah 8:00 PM • Dinner 8:30 PM\n" +
+        "📍 *Satya Vatika*, Sabhapur, Near Shiv Mandir Bus Stand, Delhi-94\n" +
+        window.location.href
+      );
+      window.open(`https://wa.me/?text=${text}`, '_blank');
+    }
+
+    // Copy Address
+    function copyAddress() {
+      const temp = document.createElement('textarea');
+      temp.value = "Satya Vatika, Sabhapur, Near Shiv Mandir Bus Stand, Delhi-94";
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      showToast('Venue address copied!');
+    }
+
+    // Scroll Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal-item').forEach(el => observer.observe(el));
+
+    // Ambient Rose Petals & Gold Dust Canvas
+    const canvas = document.getElementById('ambient-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    class PetalParticle {
+      constructor(burst = false) { this.reset(burst); }
+      reset(burst = false) {
+        this.x = burst ? canvas.width / 2 + (Math.random() - 0.5) * 160 : Math.random() * canvas.width;
+        this.y = burst ? canvas.height / 2 + (Math.random() - 0.5) * 160 : Math.random() * canvas.height - canvas.height;
+        this.isPetal = Math.random() > 0.6;
+        this.size = this.isPetal ? Math.random() * 4.5 + 3.5 : Math.random() * 2 + 1;
+        this.vy = burst ? (Math.random() - 0.3) * 4.0 : Math.random() * 0.8 + 0.35;
+        this.vx = (Math.random() - 0.5) * (burst ? 4.8 : 0.6);
+        this.rot = Math.random() * Math.PI * 2;
+        this.spin = (Math.random() - 0.5) * 0.04;
+        this.alpha = Math.random() * 0.55 + 0.25;
+      }
+      update() {
+        this.y += this.vy;
+        this.x += this.vx + Math.sin(this.rot) * 0.25;
+        this.rot += this.spin;
+        if (this.y > canvas.height + 15) {
+          this.reset(false);
+          this.y = -10;
+        }
+      }
+      draw() {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rot);
+        ctx.globalAlpha = this.alpha;
+        if (this.isPetal) {
+          ctx.fillStyle = '#f2c6c6';
+          ctx.beginPath();
+          ctx.ellipse(0, 0, this.size, this.size * 0.55, 0, 0, Math.PI * 2);
+          ctx.fill();
+        } else {
+          ctx.fillStyle = '#f5e29f';
+          ctx.beginPath();
+          ctx.arc(0, 0, this.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+    }
+
+    for (let i = 0; i < 36; i++) particles.push(new PetalParticle(false));
+
+    function burstParticles() {
+      for (let i = 0; i < 22; i++) particles.push(new PetalParticle(true));
+      if (particles.length > 75) particles.splice(0, particles.length - 58);
+    }
+
+    function loop() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      requestAnimationFrame(loop);
+    }
+
+    window.onload = function() { loop(); };
+  </script>
+</body>
+</html>
